@@ -1,0 +1,137 @@
+<div class="nav" role="navigation">
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="large">
+    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <div class="title-bar-title">The Michigan Engineer</div>
+  </div>
+  <div class="top-bar" id="example-menu">
+    <div class="nav__logo show-for-large">
+      <a href="https://news.engin.umich.edu/"><img src="assets/img/engineer_logo.png" alt="Michigan Engineer Magizine logo"></a>
+    </div>
+    <div class="top-bar-left">
+      <ul class="large-horizontal vertical menu" data-responsive-menu="drilldown" data-auto-height="true" data-dropdown-menu>
+        <div class="column show-for-small-only">
+          <ul class="menu vertical">
+            <form action="//www-search.engin.umich.edu/search" class="searchform" id="cse-search-box">
+              <input name="cx" type="hidden" value="YOUR GCSE CX VALUE HERE">
+              <input name="ie" type="hidden" value="UTF-8">
+              <label for="q" style="display: none;">x</label>
+              <input class="search-box" id="q" name="q" onfocus="document.getElementById('q').value=''" type="text" placeholder="Search...">
+              <input type="submit" class="search-button" value="search">
+            </form>
+            <!-- Note: Google search isn't the best when it comes to accessability. jQuery injection has been set up in default.html file. This just as an example of how it can be set up, but true testing can happen when Google Custom Search is set up. Below is a reference URL where i found the code and setup. -->
+            <!-- https://www.percussion.com/blog/2016/March/accessible-google-custom-search.html -->
+          </ul>
+        </div>
+        <div class="nav__links large-horizontal vertical menu">
+          <li class="nav__border-color--red"><a href="https://news.engin.umich.edu/category/research/">Research</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">One</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Two</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Three</a></li>
+          <li class="nav__border-color--lblue"><a href="https://news.engin.umich.edu/category/campus-comm/ ">Campus and Community</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">One</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Two</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Three</a></li>
+          <li class="nav__border-color--orange"><a href="#">By Department</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">One</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Two</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Three</a></li>
+          <li class="nav__border-color--green"><a href="https://news.engin.umich.edu/videos/ ">Video</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">One</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Two</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Three</a></li>
+          <li class="nav__border-color--gyellow"><a href="https://news.engin.umich.edu/features/ ">In-Depth</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">One</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Two</a></li>
+          <li class="hide-for-large nav__links--mobile"><a href="#">Three</a></li>
+        </div>
+        <div class="column">
+          <div class="nav__social horizontal menu">
+            <li><a href="http://www.facebook.com/michigan.engineering" aria-label="Facebook link"><i class="fab fa-facebook-f" aria-hidden="true"></a></i></li>
+            <li><a href="http://www.twitter.com/UMengineering" aria-label="Twitter link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="http://instagram.com/michiganengineering" aria-label="Instagram link"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="http://www.youtube.com/user/michiganengineering" aria-label="YouTube link"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>            
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+
+        <div class="column horizontal menu show-for-large">
+          <li><a data-toggle="search-menu" href="#"><i class="fa fa-search nav__search" aria-hidden="true"></i></a></li>
+        </div>
+        <div class="column horizontal menu show-for-large">
+          <li><a class="nav__menu" data-toggle="mega-menu" id="nav-toggle" href="#"><span></span></a>
+        </div>
+        </li>
+        <!-- <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="mega-menu">
+    <div class="dropdown-pane mega-menu bottom" id="mega-menu" data-dropdown data-options="closeOnClick:true; hover: false; hoverPane: false; vOffset:35">
+      <div class="row expanded">
+        <div class="column">
+          <ul class="menu vertical">
+            <li><a href="https://news.engin.umich.edu/category/research/">Research</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="menu vertical">
+            <li><a href="https://news.engin.umich.edu/category/campus-comm/ ">Campus and Community</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="menu vertical">
+            <li><a href="#">By Department</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="menu vertical">
+            <li><a href="https://news.engin.umich.edu/videos/ ">Video</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="menu vertical">
+            <li><a href="https://news.engin.umich.edu/features/ ">In-Depth</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mega-menu search-menu">
+    <div class="dropdown-pane mega-menu bottom" id="search-menu" data-dropdown data-options="closeOnClick:true; hover: false; hoverPane: false; vOffset:11">
+      <div class="row expanded">
+        <div class="column">
+          <ul class="menu vertical">
+            <form action="//www-search.engin.umich.edu/search" class="searchform" id="cse-search-box">
+              <input name="cx" type="hidden" value="YOUR GCSE CX VALUE HERE">
+              <input name="ie" type="hidden" value="UTF-8">
+              <label for="q" style="display: none;">x</label>
+              <input class="search-box" id="q" name="q" onfocus="document.getElementById('q').value=''" type="text" placeholder="Search...">
+              <input type="submit" class="search-button" value="search">
+            </form>
+            <!-- Note: Google search isn't the best when it comes to accessability. jQuery injection has been set up in default.html file. This just as an example of how it can be set up, but true testing can happen when Google Custom Search is set up. Below is a reference URL where i found the code and setup. -->
+            <!-- https://www.percussion.com/blog/2016/March/accessible-google-custom-search.html -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

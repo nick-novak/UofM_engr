@@ -1,0 +1,53 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/manifest.json">
+	<link rel="mask-icon" href="https://www.engin.umich.edu/wp-content/themes/coe-um/dist/assets/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <title>The Michigan Engineer Magizine</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    {{> navigation}}
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    {{> footer}}
+
+    <script>
+      var imgAltTagsFix = function() {
+        $('img.gsc-branding-img').attr("alt", "Google Custom Search Branding");
+        $('input.gsc-search-button').attr('alt', "Google Custom Search Button");
+      };
+      window.__gcse = {
+        callback: imgAltTagsFix
+      };
+
+      (function() {
+        var cx = '000000000000000000000:xxxxxxxxxxx';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

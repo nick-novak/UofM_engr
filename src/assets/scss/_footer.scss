@@ -1,0 +1,60 @@
+footer {
+  background: url(../../assets/img/backgroundpattern.jpg) center bottom no-repeat fixed;
+  background-size: cover;
+  padding: 1rem 0;
+
+  h3 {
+    font-family: $bebas-bold;
+    color: #fff;
+  }
+
+  ul {
+    margin-left: 0;
+    color: #fff;
+    li {
+      list-style: none;
+    }
+  }
+  a {
+    color: #fff;
+    transition: all .5s;
+    &:hover {
+      color: $maize;
+    }
+  }
+}
+
+.footer__logo {
+  @media screen and (max-width: 39.9375em) {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+// ******************
+// MAGAZINE CONTAINER
+// ******************
+.magazine {
+  color: #fff;
+  padding-bottom: 2rem;
+  ul {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: .75rem;
+  }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1.25rem 0;
+  }
+  h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.25rem 0;
+  }
+}

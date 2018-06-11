@@ -1,0 +1,26 @@
+// colors
+$maize: #FFCB05;
+$blue: #00274C;
+
+
+// Typography
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('/assets/fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('/assets/fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bebas-reg:   "bebas_neueregular", Helvetica, Verdana, sans-serif;
+$bebas-bold:  "bebas_neuebold", Helvetica, Verdana, sans-serif;
+$sans-serif:  "Arial Black", Gadget, sans-serif;
+$serif:       "Times New Roman", Times, serif;
